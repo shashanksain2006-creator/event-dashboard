@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event Dashboard</title>
+
+    <link rel="stylesheet" href="syle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🚀 Smart Event Dashboard</h1>
+
+    <div class="counter">
+        Total Events
+        <span id="count">0</span>
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <div class="left">
+
+        <h2>Create Event</h2>
+
+        <form>
+
+            <label>Event Name</label>
+            <input id="Event-title" placeholder="Enter event name">
+
+            <label>Date</label>
+            <input type="date" id="Event-date">
+
+            <label>Category</label>
+
+            <select id="event-categories">
+
+                <option>Conference</option>
+                <option>Workshop</option>
+                <option>Meetup</option>
+                <option>Webinar</option>
+                <option>Social</option>
+
+            </select>
+
+            <label>Description</label>
+
+            <textarea rows="5" id="event-description"></textarea>
+
+            <button>Create Event</button>
+
+        </form>
+
+    </div>
+
+
+    <div class="right">
+
+        <div class="top">
+
+            <input type="text" id="search" placeholder="Search Event">
+
+            <button id="add-simple-btn">Demo</button>
+
+            <button id="clear-event-btn">Clear</button>
+
+        </div>
+
+        <div id="all-events-container" class="empty">
+
+            No Events Yet
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
